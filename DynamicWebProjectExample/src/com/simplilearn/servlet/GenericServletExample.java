@@ -29,8 +29,8 @@ public class GenericServletExample extends GenericServlet implements Servlet {
 	 * @see Servlet#service(ServletRequest request, ServletResponse response)
 	 */
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
-		String basic = request.getParameter("mnama");
-		response.setContentType("text/htm");
+		String basic = request.getParameter("mname");
+		response.setContentType("text/html");
 		PrintWriter pObj = response.getWriter();
 		pObj.print("<html><body>");
 		pObj.print("Name:" + basic + "<BR>");
