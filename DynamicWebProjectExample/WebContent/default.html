@@ -6,13 +6,16 @@
 </head>
 <body>
 <center>
-<form name="formName" method="POST" action="process">
+<form action="authenticate">
 <table width="50%" border="0">
 <tr valign="top">
-<td width="20%"> Enter your name</td>
-<td><input name="mname" id="mname" maxlength=100></td>
+<td width="20%"> Name: </td>
+<td><input name="username" id="mname" maxlength=100></td>
 </tr>
-
+<tr valign="top">
+<td width="20%"> Password: </td>
+<td><input name="password" id="mpaas" maxlength=100></td>
+</tr>
 <tr valign="top">
 <td colspan=2 width="100%">
 <button>Submit</button>
@@ -22,8 +25,5 @@
 </form>
 </center>
 
-<center>
-<a href="servletfilter">Click here for filter</a>
-</center>
 </body>
 </html>
