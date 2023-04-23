@@ -2,102 +2,110 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>DynamicWebProjectExample</display-name>
   <welcome-file-list>
-<!--     <welcome-file>index.html</welcome-file>  -->
-<!--     <welcome-file>index.htm</welcome-file>   -->
-<!--     <welcome-file>index.jsp</welcome-file>  -->
-    <welcome-file>default.html</welcome-file>
-     <welcome-file>default.htm</welcome-file>  
-     <welcome-file>default.jsp</welcome-file> 
+    <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  	<servlet-name>com.simplilearn.servlet.ServletConfigExample</servlet-name>
-  	<servlet-class>com.simplilearn.servlet.ServletConfigExample</servlet-class>
-  	<init-param>
-  		<param-name>UserName</param-name>
-  		<param-value>John</param-value>
- 	</init-param>
- 	
- 	<init-param>
-  		<param-name>Password</param-name>
-  		<param-value>john001</param-value>
- 	</init-param>
-  
+    <servlet-name>com.simplilearn.servlet.ServletConfigExample</servlet-name>
+    <servlet-class>com.simplilearn.servlet.ServletConfigExample</servlet-class>
+    <init-param>
+      <param-name>UserName</param-name>
+      <param-value>John</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Password</param-name>
+      <param-value>john001</param-value>
+    </init-param>
   </servlet>
-  
   <servlet>
-  <servlet-name>com.simplilearn.servlet.ServletContextExample</servlet-name>
-  	<servlet-class>com.simplilearn.servlet.ServletContextExample</servlet-class>
+    <servlet-name>com.simplilearn.servlet.ServletContextExample</servlet-name>
+    <servlet-class>com.simplilearn.servlet.ServletContextExample</servlet-class>
   </servlet>
-  
   <servlet>
-  <servlet-name>com.simplilearn.servlet.GenericServletExample</servlet-name>
-  	<servlet-class>com.simplilearn.servlet.GenericServletExample</servlet-class>
+    <servlet-name>com.simplilearn.servlet.GenericServletExample</servlet-name>
+    <servlet-class>com.simplilearn.servlet.GenericServletExample</servlet-class>
   </servlet>
-  
   <servlet>
-  <servlet-name>com.simplilearn.servlet.ServletFilterExample</servlet-name>
-  	<servlet-class>com.simplilearn.servlet.ServletFilterExample</servlet-class>
+    <servlet-name>com.simplilearn.servlet.ServletFilterExample</servlet-name>
+    <servlet-class>com.simplilearn.servlet.ServletFilterExample</servlet-class>
   </servlet>
-  
   <servlet>
-  <servlet-name>com.simplilearn.servlet.AuthenticationFilterExample</servlet-name>
-  	<servlet-class>com.simplilearn.servlet.AuthenticationFilterExample</servlet-class>
+    <servlet-name>com.simplilearn.servlet.AuthenticationFilterExample</servlet-name>
+    <servlet-class>com.simplilearn.servlet.AuthenticationFilterExample</servlet-class>
   </servlet>
-  
+  <servlet>
+    <servlet-name>com.simplilearn.servlet.FirstCookieServlet</servlet-name>
+    <servlet-class>com.simplilearn.servlet.FirstCookieServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>com.simplilearn.servlet.SecondCookieServlet</servlet-name>
+    <servlet-class>com.simplilearn.servlet.SecondCookieServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>com.simplilearn.servlet.FirstHiddenFormFieldServlet</servlet-name>
+    <servlet-class>com.simplilearn.servlet.FirstHiddenFormFieldServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>com.simplilearn.servlet.SecondHiddenFormFieldServlet</servlet-name>
+    <servlet-class>com.simplilearn.servlet.SecondHiddenFormFieldServlet</servlet-class>
+  </servlet>
   <filter>
-  <filter-name>com.simplilearn.servlet.AuthenticationFilter</filter-name>
-  	<filter-class>com.simplilearn.servlet.AuthenticationFilter</filter-class>
+    <filter-name>com.simplilearn.servlet.AuthenticationFilter</filter-name>
+    <filter-class>com.simplilearn.servlet.AuthenticationFilter</filter-class>
   </filter>
-  
   <context-param>
-  	<param-name>ContextName</param-name>
-  	<param-value>DummyContext</param-value>
+    <param-name>ContextName</param-name>
+    <param-value>DummyContext</param-value>
   </context-param>
-  
   <context-param>
-  	<param-name>ContextPassword</param-name>
-  	<param-value>Password</param-value>
+    <param-name>ContextPassword</param-name>
+    <param-value>Password</param-value>
   </context-param>
-  
   <servlet-mapping>
-  	<servlet-name>com.simplilearn.servlet.ServletConfigExample</servlet-name>
-  	<url-pattern>/servletconfig</url-pattern>
+    <servlet-name>com.simplilearn.servlet.ServletConfigExample</servlet-name>
+    <url-pattern>/servletconfig</url-pattern>
   </servlet-mapping>
-
   <servlet-mapping>
-  	<servlet-name>com.simplilearn.servlet.ServletContextExample</servlet-name>
-  	<url-pattern>/servletcontext</url-pattern>
+    <servlet-name>com.simplilearn.servlet.ServletContextExample</servlet-name>
+    <url-pattern>/servletcontext</url-pattern>
   </servlet-mapping>
-  
   <servlet-mapping>
-  	<servlet-name>com.simplilearn.servlet.GenericServletExample</servlet-name>
-  	<url-pattern>/process</url-pattern>
+    <servlet-name>com.simplilearn.servlet.GenericServletExample</servlet-name>
+    <url-pattern>/process</url-pattern>
   </servlet-mapping>
-  
   <servlet-mapping>
-  	<servlet-name>com.simplilearn.servlet.ServletFilterExample</servlet-name>
-  	<url-pattern>/servletfilter</url-pattern>
+    <servlet-name>com.simplilearn.servlet.ServletFilterExample</servlet-name>
+    <url-pattern>/servletfilter</url-pattern>
   </servlet-mapping>
-  
   <servlet-mapping>
-  	<servlet-name>com.simplilearn.servlet.AuthenticationFilterExample</servlet-name>
-  	<url-pattern>/authenticate</url-pattern>
+    <servlet-name>com.simplilearn.servlet.AuthenticationFilterExample</servlet-name>
+    <url-pattern>/authenticate</url-pattern>
   </servlet-mapping>
-  
+  <servlet-mapping>
+    <servlet-name>com.simplilearn.servlet.FirstCookieServlet</servlet-name>
+    <url-pattern>/firstcookiesservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>com.simplilearn.servlet.SecondCookieServlet</servlet-name>
+    <url-pattern>/secondcookiesservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>com.simplilearn.servlet.FirstHiddenFormFieldServlet</servlet-name>
+    <url-pattern>/hidden1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>com.simplilearn.servlet.SecondHiddenFormFieldServlet</servlet-name>
+    <url-pattern>/hidden2</url-pattern>
+  </servlet-mapping>
   <filter>
-  	<filter-name>com.simplilearn.servlet.ServletFilter</filter-name>
-  	<filter-class>com.simplilearn.servlet.ServletFilter</filter-class>
+    <filter-name>com.simplilearn.servlet.ServletFilter</filter-name>
+    <filter-class>com.simplilearn.servlet.ServletFilter</filter-class>
   </filter>
-  
   <filter-mapping>
-  	<filter-name>com.simplilearn.servlet.ServletFilter</filter-name>
-  	<url-pattern>/servletfilter</url-pattern>
+    <filter-name>com.simplilearn.servlet.ServletFilter</filter-name>
+    <url-pattern>/servletfilter</url-pattern>
   </filter-mapping>
-  
   <filter-mapping>
-  	<filter-name>com.simplilearn.servlet.AuthenticationFilter</filter-name>
-  	<url-pattern>/authenticate</url-pattern>
+    <filter-name>com.simplilearn.servlet.AuthenticationFilter</filter-name>
+    <url-pattern>/authenticate</url-pattern>
   </filter-mapping>
-  
 </web-app>
