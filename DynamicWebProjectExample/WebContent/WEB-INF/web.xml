@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>DynamicWebProjectExample</display-name>
   <welcome-file-list>
-    <welcome-file>default.htm</welcome-file>
+    <welcome-file>home.html</welcome-file>
   </welcome-file-list>
   <servlet>
     <servlet-name>com.simplilearn.servlet.ServletConfigExample</servlet-name>
@@ -47,6 +47,22 @@
   <servlet>
     <servlet-name>com.simplilearn.servlet.SecondHiddenFormFieldServlet</servlet-name>
     <servlet-class>com.simplilearn.servlet.SecondHiddenFormFieldServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>com.simplilearn.servlet.FirstURLRewritingServlet</servlet-name>
+    <servlet-class>com.simplilearn.servlet.FirstURLRewritingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>com.simplilearn.servlet.SecondURLRewritingServlet</servlet-name>
+    <servlet-class>com.simplilearn.servlet.SecondURLRewritingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>com.simplilearn.servlet.FirstHTTPSessionServlet</servlet-name>
+    <servlet-class>com.simplilearn.servlet.FirstHTTPSessionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>com.simplilearn.servlet.SecondHTTPSessionServlet</servlet-name>
+    <servlet-class>com.simplilearn.servlet.SecondHTTPSessionServlet</servlet-class>
   </servlet>
   <filter>
     <filter-name>com.simplilearn.servlet.AuthenticationFilter</filter-name>
@@ -95,6 +111,22 @@
   <servlet-mapping>
     <servlet-name>com.simplilearn.servlet.SecondHiddenFormFieldServlet</servlet-name>
     <url-pattern>/hidden2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>com.simplilearn.servlet.FirstURLRewritingServlet</servlet-name>
+    <url-pattern>/url1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>com.simplilearn.servlet.SecondURLRewritingServlet</servlet-name>
+    <url-pattern>/url2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>com.simplilearn.servlet.FirstHTTPSessionServlet</servlet-name>
+    <url-pattern>/httpsession1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>com.simplilearn.servlet.SecondHTTPSessionServlet</servlet-name>
+    <url-pattern>/httpsession2</url-pattern>
   </servlet-mapping>
   <filter>
     <filter-name>com.simplilearn.servlet.ServletFilter</filter-name>
